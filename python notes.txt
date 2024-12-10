@@ -1,0 +1,439 @@
+""" str1="This  is a string.\nwe are creating it in python "      .......    #\n is used  to print it in next line 
+str2="my name is jyoti. \twe are good "                          ....... #\t is used to create a space in between the sentence 
+print(str1)
+print(str2 )
+str11="Apna"
+print("the length is" ,len(str11))
+str2="college"
+print(str1+str2)          #concatenation..............  """
+"""str="jyoti"
+print(str[4])             #Indexing..........
+str1="apna college"
+print(str1[0:4])
+print(str1[:6])             #Automatically understanding the starting index  ................
+print(str1[5:12])             #slicing......... 
+print(str1[5:len(str1)])
+string1="Apple"
+print(string1[-3:-1])"""
+"""
+str="I am from studying python from apnacollege"
+print(str.endswith("ege"))
+print(str.capitalize())
+print(str.replace("o","a"))
+print(str.find("o"))
+print(str.count("from"))            #can use substring and one one characters. """
+"""
+name=input("Enter ur name:- ")
+print(len(name))                         #PROG-01
+str="$ubha$hree"
+print(str.count("$"))                    #PROG-02"""
+"""
+age=int(input("Enter your age :-"))
+if(age>=18):
+    if(age>=80)
+    print("Can give vote and appy for license")                        #INDENTATION means proper spacing. very imp 
+else:
+    print("Can't give vote ")
+    light=input("enter the colour ")
+    if(light=="Green"):
+        print("Go")
+    elif(light=="red"):
+        print("Stop")
+    elif(light=="yellow"):
+        print("Wait")
+    else:
+        print("light is broken") 
+
+marks=int(input("Enter ur marks:- "))
+if(marks>=90):
+    print("ur grade is A")
+elif(marks<90 and marks>=80):
+    print("Ur grade is B")
+elif(marks<80 and marks>=70):
+    print("Ur grade is C")
+else:
+    print("Ur grade is D")
+
+#WAP to print which number is odd or even
+num=int(input("Enter the number:- "))
+rem=num%2
+if(rem==0):
+    print("NUmber is even")
+else:
+    print("Number is odd") 
+
+#WAP to print a number whether it is a multiple of 7 or not
+num=int(input("Enter the number:- "))
+if(num%7==0):
+    print("Multiple of 7")
+else:
+    print("Not multiple of 7") 
+
+#WAP to find the greatest among 3 numbers
+a=int(input("enter the first number :-"))       
+b=int(input("Enter the second number :-"))
+c=int(input("Enter the third number :-"))
+
+if(a>=b and a>=c):
+    print("first number is greatest",a)
+elif(b>=c):
+    print("Second number is greatest",b)
+else:
+    print("Third number is greatest",c) """
+
+#*******LECTURE=03*******
+#LIST...................
+"""
+student=["subha","omm","mitul","mama","papa","subha"]
+print(student)
+print(student[2])
+print(student.append("lipsi"))
+print(student)
+print(student.sort())
+print(student)
+print(student.sort(reverse=True))
+print(student)
+print(student.reverse())
+print(student)
+print(student.insert(5,"Sonu"))
+print(student)
+print(student.remove("subha"))
+print(student)
+print(student.pop(2))
+print(student)
+#TUPLE.............................(IMMUTABLE SEQUENCE OF VALUES )
+tup=(2,3,4,1,1)
+print(tup)
+print(tup[0])
+print(tup[1]) 
+#tup[0]=8 --------------->>>>>>>> here it will show error because it is immutable 
+print(tup[1:3])
+print(tup.index(2))
+print(tup.count(1))
+
+movie1=input("Enter first movie:- ")
+movie2=input("Enter second movie:-")
+movie3=input("Enter third movie:-")
+list=[movie1,movie2,movie3]
+print(list)
+grades=("C","D","A","A","B","B","A")
+print(grades.count("A"))
+grades=["C","D","A","A","B","B","A"]
+print(grades.sort())
+print(grades)
+
+#LECTURE--04(dICTIONARY AAND SETS )
+#Dictionary:-------------------------->>>>>>>>>>>>>>>
+#we want to create one dictionary;
+info={
+     "key" : "value",
+     "name" : "Subha" ,
+     "subject" :["python", "c","java"],
+     "topics" :("tuples", "dictionary"),
+     "learning" : "coding",
+     "age" : 18,
+     "is adult ":True,
+     "marks" :96.8
+     }
+info["name"]="jyoti"
+info["surname"]="pati"
+print(info["name"])                        #overwrite
+print(info["subject"])
+print(info["topics"])
+print(info["learning"])
+print(info["age"])
+null_dict={}
+print(null_dict)
+
+#NESTED DICTIONARY--------------->>>>>>
+student={
+    "name": "sonu",
+    "subjects":{
+        "phy":98,
+        "chem":96,
+        "maths":97
+
+    }
+}
+print(student)
+print(student["subjects"])
+print(student.keys())
+print(list(student.keys()))
+print(len(list(student.keys())))
+print(student.values())
+print(student.items())
+print(student.get("name"))
+print(student.update(""))
+
+#SETS.....................>>>>>
+collection={1,2,3,4,"world","hello",1,"world"}
+print((collection))
+print(len(collection))
+#collection_1={}                   #it is not the correct syntax for null set ,#it is actually null dictionary...
+#print(type(collection_1))
+collection_1=set()          #it is  the correct syntax for null set 
+print(type(collection_1))
+set={"babuni",1,5,4,"sonu",}
+print(set.add("somu"))
+print(set)
+print(set.remove(4))
+print(set)
+print(set.pop())
+#METHODS UNION AND INTERSECTION IN PYTHON.........>>>
+set1={1,3,4,5,6}
+set2={2,6,8,9,10}
+print(set1.union(set2))
+print(set1.intersection(set2))
+#PRACTISE QUESTIONS...>>>
+#Q1)    Dict={
+    "table":"a piece of furniture" "list of facts and figures ",
+    "cat":"a pet animal"
+}
+print(Dict)
+Q2) collection_1={"python","java","c++","javascript","python","java","c++","c"}
+print(len(collection_1))
+mark_1=input("Enter the mark of first student:- ")
+mark_2=input("Enter the mark of second student:- ")
+mark_3=input("Enter the mark of third student:- ")
+dict={}
+print(dict.keys(mark_1))
+print(dict.keys(mark_2))
+print(dict.keys(mark_3))
+
+
+
+
+
+
+
+#LECTURE-05----------------------------->>>>>>>( LOOPS )
+#Synatx of while loop:
+                        #while(condition)
+                        # some work     
+#wap to print  "hello world "5 time using loop:---
+i=0
+while(i<5):
+    print("hii")
+    i=i+1
+#q1) WAp to print numbers from 1 to 100
+i=1
+while(i<=100):
+    print(i)
+    i=i+1
+#Q2) WAp to print numbers from 100 to 1
+j=100
+while(j>=1):
+    print(j)
+    j=j-1
+#Q3) WAP to print the multiplication of n
+n=input("enter the number you want:- ")
+i=1
+while(i<=10):
+    print(n*i)
+    i=i+1
+# Q4) WAP to print the following list
+i=1
+while(i<=10):
+    print(i*i)
+    i=i+1
+nums=[1,4,9,16,25,36,49,64,81,100]
+index=0
+while(index<len(nums)):
+    print(nums[index])
+    index=index+1
+#q5)SEARCH A NUMBER FROM THE TUPLE
+nums=(1,4,9,16,25,36,49,64,81,100)
+x=36
+i=0
+while(i< len(nums)):
+    if(nums[i] == x):
+        print("found at index ",i)
+        break
+    else:
+     print("finding.... ")
+     i+=1
+
+#BREAK AND CONTINUE KEYWORDS:--------->>>>>>>
+i=1
+while(i<=5):
+     print(i)                                        #func of break :-used to terminate the loop when encountered.
+     if(i==3):                                       #here the loop will terminate when the i value becomes equals to 3
+        break
+     i=i+1
+
+i=1  
+while(i<=5):
+    if(i==3):
+        i=i+1               #func of continnue :-terminates execution in current iteration and continues execution of loop in next iteration.
+        continue           #Here when the value  of i=3,in that time the loop will terminate that means the value of i will not be printed
+    print(i)
+    i=i+1 
+ #FOR LOOP :---------------->>>>>>>>>>>>>>>>>>>>
+ #Syntax of for loop 
+                           #for var(el) in list(numbs)
+                           #some work.
+numbs=[1,3,2,4,5,6]   
+for el in numbs:                                                      #example 1
+         print(el)  
+
+fruits=["mango","banana","litchi","apple","jackfruit"]
+for fru in fruits:                                                   #example 2
+        print(fru)
+tup=(1,2,3,4,5,6)  
+for num in tup:
+        print(num)                                                   #example 3 using tuple
+
+string="apnacollege "
+for str in string:  
+        if(str=="o") :                   #can use both char or any variable str 
+                print("o found ")
+                break
+        print(str)
+else:
+        print("end of loop ")
+
+numbers=(1,4,9,16,25,36,49,64,81,100,49)
+x=49
+idx=0
+for ele in numbers:
+    if(ele==x):
+            print("element found ",idx)
+            break
+idx=idx+1   
+names=("subha","lipsi","tanu","sonali")
+for nick in names:
+       print(names)
+#RANGE(START?,STEP?,STOP)
+seq=range(10)
+for i in seq:                     #OR   for i in range(5)
+    print(i)                      #print(i)
+
+    #we want to print even numbers using loop :--
+for i in range(10):
+    pass                                   #if we dont want to write anything after for loop 
+
+print("hii")
+   
+  #LECTURE 06 fuctions and recursion 
+def calcu_sum(a,b):
+    sum=a+b
+    print(sum)
+    return sum
+calcu_sum(5,10)
+#more lines
+calcu_sum(9,10)
+#more lines
+calcu_sum(15,10)
+
+def print_hello():
+     print("hello")
+print_hello()
+print_hello()
+print_hello()
+def calc_avg(a,b,c):
+    avg=(a+b+c)/3
+    print(avg)
+    return avg
+calc_avg(3,6,9)
+calc_avg(5,7,8)
+
+#FUCTIONS IN PYTHON:-------------->>>>>>>>>>>
+#two types of functions are:-
+#1.Built-in fuction                                                2.User defined function 
+#examples of buiolt in data function are:-   *print()
+#                                            *len()
+#                                            *type()
+#                                            *range()
+print("apna college",end=" ")  #sep=" ",
+print("subhalaxmi")            #end=\n
+#DEFAULT PARAMETERS:--- assigning a default value to parameter,which is used when no argument is passed..   
+def calc_prod(a,b):              
+    pro=a*b
+    print(pro)
+    return pro
+calc_prod(3,5)
+#WAp to print the length of a list(list is a parameter )
+names=["subha","lipsi","sonu","somu","babuni","tanu"]
+cities=["america","japan","russia","australia","dubai","africa","switerland"]
+def coun_len(list):
+    print(len(list))
+coun_len(cities)
+coun_len(names)
+#WAP to print the elements of a list in a single line(list is the parameter )
+names=["name=jyoti","study=studying in soa","age=19 years"]
+def print_single(list):
+    print(list, end=" ")
+print_single(names)
+#0r
+names=["subha","lipsi","sonu","somu","babuni","tanu"]
+cities=["america","japan","russia","australia","dubai","africa","switerland"]
+def print_oneline(list):
+    for ele in list:
+        print(ele,end=" ")
+print_oneline(names)
+print()
+print_oneline(cities)
+#WAP to find the factorial of n,(n is a parameter )
+def calc_fact(n):
+    fact=1
+    for i in range(1,n+1):
+        fact=fact*i
+    print(fact)
+calc_fact(5)
+#WAP TO CONVERT USD TO INR.               1 dollar = 83 rupees     
+def convert(usd_value):
+    print(usd_value, "usd","= ", usd_value*83,"rupees" )
+convert(2)
+#WAP to check whether a number is odd or even.
+def to_check(num):
+    if(num%2==0):
+        print("EVEN")
+    else:
+        print("ODD")
+to_check(9)
+
+#RECURSION.......>>>>>>>>>>>>>>>(When a function calls itself repeatedly )
+#prints n to 1 backwards:-
+def show(n):
+    if(n==0):                 #base case
+        return
+    print(n)
+    show(n-1)
+
+show(5)
+#print the factorial
+def fact_num(n):
+    if(n==0 or n==1):
+        return 1
+    else:
+      return n * fact_num(n-1)
+print(fact_num(5))
+#WAP a recursive function to calculate the sum of first n natural numbers:- 
+n=int(input("Enter the number you like:- "))
+def calc_sum(n):
+   if(n==0):
+      return 0
+   else:
+      return calc_sum(n-1) + n 
+print(calc_sum(n))
+#write a recursive function to print all elements in a list. hint: use list & index as parameters.
+
+def print_list(list,index=0):
+    if(index==len(list)):
+       return 
+    else:
+       print(list[index])
+       print(list,index+1)
+fruits=["mango","litchi","apple","banana"]
+print_list(fruits)"""
+
+#LECTURE 07  [FILE I/O IN PYTHON] :-
+#python can be used to perform operations on a file.(read and write)
+#TYpes of files:-
+#Text Files:- .txt, .docx, .log etc
+#Binary files:- .mp4, .mov, .png, .jpeg etc  
+#RAM IS VOLATILE.
+#open,read,and close file:
+#f=open("file_name","mode")
+ #        sample.txt, r:read mode
+#         demo.docx,  w:write mode
